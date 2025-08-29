@@ -78,3 +78,67 @@ Sample Output:
 ```
 bash67890
 ```
+
+## primefc
+Input Specification:
+Each input file contains one test case which gives a positive integer N in the range of long int.
+Output Specification:
+Factor N in the format N=p1^k1*pm^km*...pm^km, where pi's are prime factors of N in increasing order, and the exponent ki is the number of pi -- hence when there is only one pi, ki is 1 and must NOT be printed out.
+
+Sample Input:
+```bash
+97532468
+```
+Sample Output:
+```
+97532468=2^2*11*17*101*1291
+```
+
+## blac
+For any 4-digit integer except the ones with all the digits being the same, if we sort the digits in non-increasing order first, and then in non-decreasing order, a new number can be obtained by taking the second number from the first one. Repeat in this manner we will soon end up at the number 6174 -- the black hole of 4-digit numbers. This number is named Kaprekar Constant.
+
+For example, start from 6767, we'll get:
+```bash
+7766 - 6677 = 1089
+9810 - 0189 = 9621
+9621 - 1269 = 8352
+8532 - 2358 = 6174
+7641 - 1467 = 6174
+... ...
+```
+Given any 4-digit number, you are supposed to illustrate the way it gets into the black hole.
+Input Specification:
+Each input file contains one test case which gives a positive integer N in the range (0,104).
+Output Specification:
+If all the 4 digits of N are the same, print in one line the equation N - N = 0000. Else print each step of calculation in a line until 6174 comes out as the difference. All the numbers must be printed as 4-digit numbers.
+
+
+Sample Input:
+```bash
+6767
+```
+Sample Output:
+```
+7766 - 6677 = 1089
+9810 - 0189 = 9621
+9621 - 1269 = 8352
+8532 - 2358 = 6174
+```
+
+## countpat
+The string APPAPT contains two PAT's as substrings. The first one is formed by the 2nd, the 4th, and the 6th characters, and the second one is formed by the 3rd, the 4th, and the 6th characters.
+Now given any string, you are supposed to tell the number of PAT's contained in the string.
+Input Specification:
+Each input file contains one test case. For each case, there is only one line giving a string of no more than 105 characters containing only P, A, or T.
+Output Specification:
+For each test case, print in one line the number of PAT's contained in the string. Since the result may be a huge number, you only have to output the result moded by 1000000007.
+
+Sample Input:
+```bash
+APPAPT
+```
+Sample Output:
+```
+2
+```
+
